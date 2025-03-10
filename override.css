@@ -1,0 +1,317 @@
+:root {
+    --text: #000;
+
+    --switchery-background: #fff;
+    --loader-img: #fff;
+
+    --profile-update-detail: #FFDBDB;
+    --form-control-bg: #ffffff;
+    --toggle-dark-mode-text: #495057;
+}
+
+/* HACK TO PREVENT SELECT2 WIDTH COLLAPSING TO 1PX ON AJAX RELOADS */
+.select2-container--bootstrap4 {
+    width: 100% !important;
+}
+
+/* Minimum height is set as 100vh in base.css */
+.app-inner-layout .app-inner-layout__wrapper {
+    min-height: 60vh !important;
+}
+
+
+.app-theme-gray.app-container {
+    background: #fbfbfb;
+}
+
+
+/* used to give padding to the overall layout container that is set as fluid*/
+.padded-container {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+}
+
+@media (max-width: 991.98px) {
+    .padded-container {
+        padding: 0 !important;
+    }
+}
+
+.card-header{
+    background: none !important;
+}
+
+.modal {
+    z-index: 600 !important;
+}
+
+.modal-backdrop, .blockOverlay {
+    z-index: 500 !important;
+}
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: none !important;
+    }
+}
+
+/* Slider */
+.slick-loading .slick-list {
+    z-index: 10000 !important;
+}
+
+.daterangepicker {
+    z-index: 1060 !important;
+}
+
+.popover,
+.dropdown-menu {
+    z-index: 1060 !important;
+}
+
+/* centering the modal */
+.modal-dialog {
+    margin-top: 3vh;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Modal widths in phone*/
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        width: 100%!important;
+    }
+}
+/* Modal widths in desktop*/
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        width: 60%!important;
+    }
+}
+
+
+
+@media (min-width: 991.98px) {
+    .app-inner-layout.app-inner-layout-page.app-layout-menu-default .app-inner-layout__wrapper .app-inner-layout__sidebar {
+        margin-left: 0;
+    }
+
+    .app-inner-layout.app-inner-layout-page.app-layout-menu-default .show-menu-btn {
+        display: none;
+    }
+
+    .app-inner-layout.app-inner-layout-page.app-layout-menu-default .close-menu-btn {
+        display: block;
+    }
+}
+
+
+/* fitting tables inside their containers */
+table {
+    width: 100% !important;
+}
+
+
+/* nav items don't overflow moves to the next line*/
+.nav-dropdown-item {
+    white-space: normal !important;
+}
+
+.dropdown-item {
+    white-space: normal !important;
+}
+
+
+/* width of the search bar in title bar*/
+
+.search-wrapper input {
+    width: 200px !important;
+
+}
+
+.app-main__outer {
+    width: 100% !important;
+}
+
+
+/* PHONE */
+@media (max-width: 991.98px) {
+
+    /* show the text of Open Module Menu & Close Module menu in phone screens */
+    .hide-text-md {
+        display: block !important;
+    }
+
+    .close-menu-btn i {
+        display: none !important;
+    }
+
+    .app-container .fiori-container {
+        width: 100% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 991.98px) {
+    .horizontal-nav-menu > li > a {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .horizontal-nav-menu .dropdown-mega-menu {
+        width: 40rem;
+    }
+    .horizontal-nav-menu .grid-menu-3col [class*="col-"]:nth-child(3n) {
+        border-right: 0;
+    }
+    .horizontal-nav-menu .grid-menu-3col [class*="col-"]:nth-child(2n) {
+        border-right-width: 1px;
+    }
+    .app-inner-layout.app-inner-layout-page .app-inner-layout__wrapper .app-inner-layout__sidebar {
+        z-index: 15;
+        background: #fff;
+        position: absolute;
+        height: 100%;
+        display: block !important;
+    }
+    .app-inner-layout.app-inner-layout-page.app-layout-menu-open .app-inner-layout__wrapper .app-inner-layout__sidebar {
+        box-shadow: 0.46875rem 0 2.1875rem rgba(13, 16, 45, 0.03), 0.9375rem 0 1.40625rem rgba(13, 16, 45, 0.03), 0.25rem 0 0.53125rem rgba(13, 16, 45, 0.05), 0.125rem 0 0.1875rem rgba(13, 16, 45, 0.03);
+        border-right: 0;
+    }
+}
+
+.app-container .fiori-container {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 991.98px) {
+    .user-switcher2 {
+        display: none !important;
+    }
+
+
+    /* container width = screenwidth - sidebar width (270px) when sidebar open */
+    /* container width = screenwidth - sidebar width (270px) when sidebar open */
+    .app-layout-menu-default .fiori-container {
+        width: calc(95vw - 270px) !important;
+    }
+
+    .app-layout-menu-open .fiori-container {
+        width: calc(95vw - 270px) !important;
+    }
+
+
+}
+
+/* DATATABLE RESPONSIVE */
+
+table.dataTable.collapsed tr td:first-child:not(.child):before {
+    content: "\f055";
+    font: normal normal normal 20px/1 FontAwesome;
+    padding-right: 6px;
+    color: #3d49cc;
+    cursor: pointer;
+}
+
+/* Modal width */
+
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        width: 95%!important;
+    }
+}
+
+.fc-header-toolbar > .fc-center > .btn-group {
+    display: block !important;
+}
+
+.fc-center > .btn-group > .btn {
+    margin-bottom: 2px !important;
+}
+
+.fc-listDay-button {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+}
+
+.fc-subscribedFeed-button {
+    margin-left: 2px !important;
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+}
+
+.fc-toolbar .fc-right {
+    margin-bottom: 2px !important;
+}
+
+
+
+/* *********  moris  **************************** */
+
+.morris-hover {
+    position: absolute;
+    z-index: 1000;
+}
+.morris-hover.morris-default-style {
+    padding: 6px;
+    color: #666;
+    background: rgba(243, 242, 243, 0.8);
+    border: solid 2px rgba(195, 194, 196, 0.8);
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0;
+}
+
+/* *********  /moris  **************************** */
+
+.alert-danger-important{
+    color: #71132a !important;
+    background-color: #f7d3dc !important;
+    border-color: #f4c2ce !important;
+}
+
+/* ******************* intro.js ********************** */
+
+.introjs-tooltiptext {
+    font-size: 1.15em !important;
+}
+
+.introjs-button {
+    font: 13px/normal sans-serif !important;
+}
+
+/* ******************* intro.js ********************** */
+
+.btn-danger {
+    print-color-adjust: exact !important;
+}
+
+.btn-primary {
+    print-color-adjust: exact !important;
+}
+
+/* ***************** apexcharts.js ***************** */
+.apexcharts-heatmap-rect{
+    stroke: rgba(50, 50, 50, 0.5);
+}
+
+/* Show borders across nav-links */
+a.nav-link.show {
+    border-color: #6770d2;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+}
